@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form name = "weatherForm">
+    <div class="weather">
+        <div class="weather-date">
+            <span id = "currentDate"></span>
+            <span id = "currentTime"></span>
+        </div>
+
+        <div class="weather-location">
+            <div class="weather-location__images">
+                <img src="./images/sun.svg"  id = "image-sunny" style = "display: none">
+                <img src="./images/clouds.svg" id = "image-cloudy" style = "display: none">
+                <img src="./images/rain.svg" id = "image-rainy" style = "display: none">
+            </div>
+            <div class="weather-location__cityName">
+                <span id = "cityName"></span>
+            </div>
+            <div class="weather-location__temperature">
+                <span id = "cityTemp"></span>
+            </div>
+            <div class="weather-location__feelslike">
+                <span id = "cityFeels" style="display: none"> </span>
+            </div>
+            <div class="weather-location__weatherType">
+                <span id = "weatherType"></span>
+            </div>
+        </div>
+    </div>
+    <div class="citySuggest">
+        <input type = "text" placeholder="Enter city name.." id = "inputField" autocomplete="off">
+        <ul class="citiesList"></ul>
+    </div>
+</form>
+</body>
+<script src="script.js"></script>
+</html>
